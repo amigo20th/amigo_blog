@@ -7,11 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Sergio I. Mota</copyright>
-    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://amigo20th.github.io/amigo_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://amigo20th.github.io/amigo_blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>big-data</title>
+      <link>https://amigo20th.github.io/amigo_blog/tags/big-data/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://amigo20th.github.io/amigo_blog/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hadoop</title>
+      <link>https://amigo20th.github.io/amigo_blog/tags/hadoop/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://amigo20th.github.io/amigo_blog/tags/hadoop/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>css</title>
       <link>https://amigo20th.github.io/amigo_blog/tags/css/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://amigo20th.github.io/amigo_blog/tags/css/</guid>
       <description></description>
@@ -20,7 +38,7 @@
     <item>
       <title>html</title>
       <link>https://amigo20th.github.io/amigo_blog/tags/html/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://amigo20th.github.io/amigo_blog/tags/html/</guid>
       <description></description>
@@ -29,7 +47,7 @@
     <item>
       <title>hugo</title>
       <link>https://amigo20th.github.io/amigo_blog/tags/hugo/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://amigo20th.github.io/amigo_blog/tags/hugo/</guid>
       <description></description>
@@ -38,7 +56,7 @@
     <item>
       <title>markdown</title>
       <link>https://amigo20th.github.io/amigo_blog/tags/markdown/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://amigo20th.github.io/amigo_blog/tags/markdown/</guid>
       <description></description>

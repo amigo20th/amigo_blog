@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Big Data y Hadoop - Sergio I. Mota</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Big Data y Hadoop">
+<meta itemprop="description" content="Explicación sobre qué es Big Data y Hadoop"><meta itemprop="datePublished" content="2021-08-13T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-08-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1291">
+<meta itemprop="keywords" content="big-data,hadoop," /><meta property="og:title" content="Big Data y Hadoop" />
+<meta property="og:description" content="Explicación sobre qué es Big Data y Hadoop" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amigo20th.github.io/amigo_blog/posts/bigdatahadoop/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-13T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-08-13T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Big Data y Hadoop"/>
+<meta name="twitter:description" content="Explicación sobre qué es Big Data y Hadoop"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://amigo20th.github.io/amigo_blog/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://amigo20th.github.io/amigo_blog/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://amigo20th.github.io/amigo_blog/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://amigo20th.github.io/amigo_blog/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://amigo20th.github.io/amigo_blog/">
+				<img src="https://i.postimg.cc/MpF7m5Nz/retrato.jpg" alt="Sergio I. Mota" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://amigo20th.github.io/amigo_blog/">Sergio I. Mota</a></h1>
+	<div class="site-description"><p>Blog donde podrás encontrar publicaciones, código, <em>notebooks</em>, tutoriales y mucho más,	todo sobre ciencia de la computación.</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://www.linkedin.com/in/sergiomotapantoja/" title="Linkedin"><i data-feather="linkedin"></i></a></li><li><a href="https://github.com/amigo20th" title="Github"><i data-feather="github"></i></a></li><li><a href="https://amigo20th.github.io/" title="Portafolio"><i data-feather="briefcase"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/amigo_blog/">Inicio</a>
+			</li>
+			
+			<li>
+				<a href="/amigo_blog/posts">Publicaciones</a>
+			</li>
+			
+			<li>
+				<a href="/amigo_blog/about">Sobre mí</a>
+			</li>
+			
+			<li>
+				<a href="/amigo_blog/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">13</span>
+							<span class="rest">Aug 2021</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Big Data y Hadoop</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Para entender un poco qué es Apache <!-- raw HTML omitted -->Hadoop<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted -->, primero debemos tener claro qué es <em>Big Data</em>.</p>
+<h2 id="_big-data_"><em>Big Data</em></h2>
+<p>El <em>Big Data</em> es un término que describe el almacenamiento y procesamiento de grandes cantidades de datos, estos datos pueden ser estructurados o no estructurados.</p>
+<p>El <em>Big Data</em> nació del internet, dada su habilidad de este último a generar cantidades enormes de datos en poco tiempo.</p>
+<p><img src="https://whatsthepont.files.wordpress.com/2014/04/20140406-101737.jpg" alt="Dan Ariely"></p>
+<blockquote>
+<p>&ldquo;El Big Data es como el sexo en la adolescencia: todos hablan de él, realmente nadie sabe cómo hacerlo, todos piensan que los demás lo están haciendo, entonces todos dicen que lo están haciendo.&rdquo;
+— <!-- raw HTML omitted -->Dan Ariely<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup><!-- raw HTML omitted --></p>
+</blockquote>
+<p>Para saber diferenciar cuando se está haciendo Big Data y no solo acumulación de grandes cantidades de datos, se deben de cumplir las principales 3 Vs. Estas Vs son las siguientes:</p>
+<ul>
+<li><strong>Volumen</strong> Contar con una gran cantidad de datos.</li>
+<li><strong>Velocidad</strong> Tener la capacidad de procesar y almacenar una gran cantidad de datos rápidamente.</li>
+<li><strong>Variedad</strong> Tener la capacidad de almacenar distintos tipos de datos, como lo pueden ser: archivos (Excel, CSV, Word, …), videos, textos, pdf, etc.</li>
+</ul>
+<p>Actualmente existen definiciones de más Vs pero para fines prácticos nos quedaremos con las 3 esenciales.</p>
+<h2 id="apache-hadoop">Apache Hadoop</h2>
+<h3 id="historia">Historia</h3>
+<p>Fue desarrollado en Yahoo por Doug Cutting and Michael J. Cafarella. Está basado en las investigaciones realizadas en Google de MapReduce y la tecnología Bigtable.</p>
+<p>Está principalmente desarrollado para el manejo de grandes montos de datos y para ser robusto.</p>
+<p>Finalmente, fue donado a la fundación de Apache Software en 2006 por Yahoo, por ende, es de código abierto hasta nuestros días.</p>
+<h3 id="qué-es-hadoop">¿Qué es Hadoop?</h3>
+<blockquote>
+<p>“Apache Hadoop es un framework de código abierto que admite el almacenamiento y el procesamiento distribuido de conjuntos de datos grandes en clústeres de computadoras que usan modelos de programación simples. Hadoop está diseñado para escalar verticalmente desde una computadora hasta miles de computadoras agrupadas en clústeres, y cada máquina ofrece procesamiento y almacenamiento local.&quot; <!-- raw HTML omitted --><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><!-- raw HTML omitted --></p>
+</blockquote>
+<p>Ya viendo a Hadoop como una plataforma diseñada para los datos, Apache Hadoop es una plataforma para el análisis en <!-- raw HTML omitted --><em>data lake</em><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup><!-- raw HTML omitted --> que soporta herramientas de software, bibliotecas y metodologías. Tiene como principales características:</p>
+<ul>
+<li>Los componentes principales, así como la mayoría de las herramientas, con código abierto.</li>
+<li>Está diseñado para el manejo de grandes cantidades de datos del tipo no estructurado.</li>
+<li>Está escrito en Java, pero no es una plataforma exclusiva de Java <code>(gracias a Arceus)</code>.</li>
+<li>Primeramente, fue diseñado para GNU/Linux, pero hay versiones para Windows disponibles.</li>
+<li>Es escalable verticalmente, desde un solo servidor, hasta miles de servidores.</li>
+<li>Corre perfectamente en sistemas con hardware empresarial o en la nube.</li>
+<li>Múltiples modelos de procesamiento y bibliotecas han sido incluidos a parte del tradicional procesamiento MapReduce.</li>
+<li>Por último, y muy importante, es tolerante a fallos.</li>
+</ul>
+<p>Aquí tenemos cuestiones sumamente importantes, como lo es el hecho de que Apache Hadoop es una plataforma para el análisis de datos en <em>data lake</em>.</p>
+<p>El concepto de <em>data lake</em> se refiere a un tipo de paradigma para el almacenamiento de datos donde estos de guardan antes de preprocesarlos, es decir, se almacenan los datos “sucios” directamente. Al contrario que otro paradigma existente, que es el <em>data warehouse</em>, en el cual se almacenan los datos una vez preprocesados.</p>
+<p>Para entender de mejor manera como es que Hadoop es una plataforma del tipo <em>data lake</em>, vamos a ver el siguiente diagrama.</p>
+<p><img src="https://i.postimg.cc/QtMc2B7X/warehouse-vs-lake.png" alt="Data Warehouse vs Data Lake"></p>
+<p>En este diagrama se pueden observar las principales diferencias en usar un <em>data warehouse</em> o un <em>data lake</em> con Hadoop. La principal es que en Hadoop no tenemos un proceso ETL (Extracción, Transformación y Lectura) anterior al almacenamiento de los datos, sino que se almacenan los datos directamente “en sucio” al <em>data lake</em>. Esta diferencia viene representada por colores, el azul representa que los datos no han sido preprocesados y el amarillo que ya están los datos preprocesados. En el lado del <em>data warehouse</em>, el preprocesamiento está en el módulo de ETL, el degradado representa este preprocesamiento de los datos. Mientras que en el <em>data lake</em>, este cambio está precisamente en el módulo de Hadoop.</p>
+<h3 id="componentes-principales-de-hadoop">Componentes principales de Hadoop</h3>
+<p>Ahora que ya sabemos qué es Hadoop, cómo es que se utiliza como plataforma para el análisis de datos, vamos a ver los componentes principales que tiene Hadoop.</p>
+<p><img src="https://i.postimg.cc/jq7pWvCY/componentes-hadoop.png" alt="componentes principales de hadoop"></p>
+<h4 id="componentes-principales-de-hadoop-1">Componentes principales de Hadoop.</h4>
+<p><strong>HDFS</strong> (<em>Hadoop Distributed File System</em>) es un sistema distribuido de archivos que provee acceso de alto rendimiento a las aplicaciones, está diseñado para ser tolerante a fallos en sistemas de archivos del tipo streaming. Los bloques de datos por defecto son de 64 MB, a comparación de los bloques de 4 KB que tienen los sistemas de archivos en ext4 en Linux. Los datos son replicados en múltiples servidores, por esa razón es tolerante a fallos.</p>
+<p><strong>YARN</strong> (<em>Yet Another Resource Negotiator</em>) es el planificador maestro, asignador de recursos y negociador para el clúster entero de Hadoop. Los jobs del usuario le preguntan al YARN por recursos (contenedores) y la localidad de los datos. Provee dinámicamente locación a los recursos.</p>
+<p><strong>MapReduce</strong> es una aplicación de YARN, provee procesamiento MapReduce del tipo tradicional.</p>
+<h4 id="otros-proyectos-de-hadoop">Otros proyectos de Hadoop.</h4>
+<p><strong>Apache Pig</strong> es un leguaje de alto nivel para la creación de programas en MapReduce dentro de Hadoop.</p>
+<p><strong>Apache Hive</strong> es una infraestructura construida en la parte superior de Hadoop, esta provee resúmenes, consultas (<em>queries</em>) y análisis de grandes cantidades de datos, todo lo anterior mediante el uso de un lenguaje como SQL llamado HiveQL.</p>
+<p><strong>Apache HCatalog</strong> es una capa de administración de tablas y almacenamiento para Hadoop que permite a los usuarios leer y escribir datos más fácilmente, lo anterior gracias al uso de diferentes herramientas de procesamiento de datos (<strong>Pig</strong>, <strong>MapReduce</strong>).</p>
+<p><strong>Apache Hbase</strong> (<em>Hadoop Database</em>) es una base de datos columnar la cual es distribuida y escalable. Similar a Big Table de Google.</p>
+<p><strong>Apache Zookeeper</strong> es un servicio centralizado usado en las aplicaciones para el mantenimiento de la configuración, salud, etc. entre los nodos.</p>
+<p><strong>Apache Ambari</strong> es una herramienta para el provisionamiento, administración y monitoreo de los clústeres de Apache Hadoop.</p>
+<p><strong>Apache Oozie</strong> es un sistema de coordinación de flujos de trabajo para la administración de los jobs multiestado de Hadoop.</p>
+<p><strong>Apache Avro</strong> es un sistema de serialización de datos.</p>
+<p><strong>Apache Cassandra</strong> es una base de datos distribuida, diseñada para manejar grandes cantidades de datos a través de varios servidores.</p>
+<h4 id="otros-frameworks-de-yarn">Otros frameworks de YARN.</h4>
+<p>Debido a que MapReduce tiene diferentes limitantes, como puede ser su rendimiento o el advenimiento de nuevas tecnologías, se desarrollaron diferentes marcos en YARN para suplir estas debilidades.</p>
+<p><strong>Apache Tez</strong>. Muchos de los jobs de Hadoop consisten en ejecutar un complejo DAG (<em>Directed-Acyclic-Graph</em>) para tareas utilizando etapas independientes de MapReduce, Apache Tez generaliza este proceso y habilita esas tareas, previamente ejecutadas como estados separados de MapReduce, para ejecutarlo como un solo job que lo abarca todo.</p>
+<p>El resultado de lo anterior es un procesamiento de jobs más rápido y el mejoramiento de un job previo orientado a batch a un <em>query</em> interactivo.</p>
+<p>Tez es usado como un acelerador de MapReduce para proyectos como los son <strong>Apache Hive</strong> y <strong>Apache Pig</strong>.</p>
+<p><strong>Apache Giraph</strong> es un interactivo sistema de procesamiento de grafos, está construido para alta escalabilidad. Es usado por Facebook, Twitter y LinkedIn para crear grafos que representan la sociabilidad de los usuarios.</p>
+<p>Giraph fue escrito originalmente para el uso de MapReduce de una manera no estándar para la versión 1 de Hadoop. Ahora cuenta con una implementación nativa bajo YARN que corre más eficientemente y provee al usuario con un modelo interactivo de procesamiento, el cual no está directamente disponible con MapReduce.</p>
+<p>Es publicaciones más adelante entraremos más a detalle en cada uno de los elementos con los que cuenta Apache Hadoop.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Apache Hadoop o Hadoop, ambas maneras serán utilizadas.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Dan Ariely es un catedrático de psicología y economía conductual nacido en Estados Unidos y criado en Israel.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://cloud.google.com/learn/what-is-hadoop">https://cloud.google.com/learn/what-is-hadoop</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://aws.amazon.com/es/big-data/datalakes-and-analytics/what-is-a-data-lake/">https://aws.amazon.com/es/big-data/datalakes-and-analytics/what-is-a-data-lake/</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/amigo_blog/tags/big-data">big-data</a></li>
+							
+							<li><a href="/amigo_blog/tags/hadoop">hadoop</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2021  © Sergio I. Mota | All rights reserved.  </div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>

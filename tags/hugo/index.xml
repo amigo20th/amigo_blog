@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Sergio I. Mota</copyright>
-    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://amigo20th.github.io/amigo_blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://amigo20th.github.io/amigo_blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sintaxis de Markdown para Hugo</title>
       <link>https://amigo20th.github.io/amigo_blog/posts/post-1/</link>
-      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://amigo20th.github.io/amigo_blog/posts/post-1/</guid>
       <description>&lt;p&gt;Este artícilo ofrece una introducción a la sintaxis del soporte que ofrece &lt;!-- raw HTML omitted --&gt;Hugo&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;!-- raw HTML omitted --&gt; en cuestión de Markdown y HTML.&lt;/p&gt;</description>
